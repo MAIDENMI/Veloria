@@ -1,0 +1,15 @@
+name = "eunoia-frontend"
+main = "src/index.ts" # This is a placeholder, actual entrypoint will be managed by Next.js/Vercel
+compatibility_date = "2023-11-21"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "eunoia-db"
+database_id = "753797e7-9b59-44fa-8ce2-f5fb711cf251"
+migrations_dir = "drizzle"
+
+[env.dev]
+# This allows local development with a local D1 database
+d1_databases = [
+  { binding = "DB", database_name = "eunoia-db-local", database_id = "local-db" }
+]

@@ -6,7 +6,7 @@ import BlurFade from "@/components/ui/blur-fade";
 import Link from "next/link";
 import Image from "next/image";
 import { useSession, signOut } from "next-auth/react";
-import { LogOut } from "lucide-react";
+import { LogOut, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -48,8 +48,18 @@ export default function Home() {
         />
       </div>
       
-      {/* Auth Button - Top Right */}
-      <div className="absolute top-8 right-8 z-20">
+      {/* Auth & Profile Buttons - Top Right */}
+      <div className="absolute top-8 right-8 z-20 flex items-center gap-3">
+        <BlurFade delay={0.1} inView>
+          <Link
+            href="/profile"
+            className="text-purple-500 hover:text-purple-600 transition-colors cursor-pointer"
+            aria-label="Profile"
+            title="Profile"
+          >
+            <User className="w-6 h-6" />
+          </Link>
+        </BlurFade>
         <BlurFade delay={0.1} inView>
           <button
             onClick={() => signOut({ callbackUrl: '/login' })}

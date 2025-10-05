@@ -1,12 +1,15 @@
 import { withAuth } from "next-auth/middleware"
 import { NextResponse } from "next/server"
-import { NextRequest } from "next/server"
 
 export default withAuth(
-  function middleware(req: NextRequest) {
-    // This function runs after authentication check passes
-    // You can add additional logic here if needed
-    return NextResponse.next()
+  function middleware(req) {
+    const res = NextResponse.next();
+    const onboarded = req.nextauth?.token?.onboarded;
+    // Redirect new users to /onboarding (except if already there or on profile)
+    if (onboarded === false && !req.nextUrl.pathname.startsWith('/onboarding') && !req.nextUrl.pathname.startsWith('/profile')) {
+      return NextResponse.redirect(new URL('/onboarding', req.url));
+    }
+    return res;
   },
   {
     callbacks: {
@@ -24,9 +27,12 @@ export default withAuth(
 // Protect these routes - users must be signed in
 export const config = {
   matcher: [
+    '/',
     '/call/:path*',
     '/session/:path*',
     '/history/:path*',
+    '/onboarding',
+    '/profile',
     // Add any other protected routes here
     // Note: These patterns use Next.js middleware matchers
     // '/api/protected/:path*', // Example: protect API routes

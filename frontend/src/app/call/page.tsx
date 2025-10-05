@@ -141,9 +141,8 @@ export default function CallPage() {
       console.log('👤 User said:', userTranscript);
       
       // Interrupt agent if it's currently speaking
-      if (isSpeaking || isAgentSpeaking) {
+      if (isAgentSpeaking) {
         console.log('🛑 User interrupted - stopping agent speech');
-        setIsSpeaking(false);
         interruptAgent();
         
         // Stop TalkingHead immediately
@@ -635,7 +634,7 @@ export default function CallPage() {
         stream.getTracks().forEach(track => track.stop());
       }
     };
-  }, [stream]);
+  }, []);
 
   // Apply stream to video element whenever it changes
   useEffect(() => {

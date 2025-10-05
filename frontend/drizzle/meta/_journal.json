@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1759638520469,
+      "tag": "0000_worried_doctor_spectrum",
+      "breakpoints": true
+    }
+  ]
+}
