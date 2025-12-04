@@ -84,6 +84,24 @@ A next-generation mental wellness platform featuring real-time AI therapy sessio
 
 ---
 
+## 📸 Screenshots
+
+<div align="center">
+
+<img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/818/401/datas/original.png" alt="EUNOIA Dashboard" width="80%">
+
+*Dashboard — Choose your path to wellness*
+
+<br><br>
+
+<img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/003/818/404/datas/original.png" alt="EUNOIA AI Therapy Session" width="80%">
+
+*AI Therapy Session — Real-time conversation with Sarah*
+
+</div>
+
+---
+
 ## ✨ Features
 
 <div align="center">
@@ -384,17 +402,6 @@ The background dynamically responds to audio levels:
 
 1. Get an API key from [Google AI Studio](https://ai.google.dev/)
 2. Add to `Backend/python-service/.env`
-
----
-
-## 🚧 Roadmap
-
-- [ ] 🩺 **Licensed Therapist Connect** — Real human support integration
-- [ ] 🐱 **Wellness Companion** — Meet Meow, your emotional support buddy
-- [ ] 📈 **Mood Analytics** — Track emotional patterns over time
-- [ ] 🎵 **Adaptive Music Therapy** — Background music that responds to your mood
-- [ ] ⌚ **Wearable Integration** — Heart rate & HRV monitoring
-- [ ] 🌍 **Multi-language Support** — Global accessibility
 
 ---
 
