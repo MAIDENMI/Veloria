@@ -10,6 +10,14 @@
 
 A next-generation mental wellness platform featuring real-time AI therapy sessions with a photorealistic 3D avatar, voice interaction, and emotion-aware responses.
 
+<br>
+
+[![HackHarvard 2025](https://img.shields.io/badge/🏆%20HackHarvard-2025-A51C30?style=for-the-badge&labelColor=1a1a2e)](https://hackharvard.io/)
+[![Built in](https://img.shields.io/badge/⚡%20Built%20in-48%20Hours-FFD700?style=for-the-badge&labelColor=1a1a2e)]()
+[![Devpost](https://img.shields.io/badge/Devpost-003E54?style=for-the-badge&logo=devpost&logoColor=white)](https://devpost.com/software/veloria)
+
+<br>
+
 [![Next.js](https://img.shields.io/badge/Next.js%2015-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -28,6 +36,10 @@ A next-generation mental wellness platform featuring real-time AI therapy sessio
 <table>
 <tr>
 <td width="60%">
+
+> 🏆 **Built in 48 hours at [HackHarvard 2025](https://hackharvard.io/)** — Harvard University's premier hackathon
+> 
+> 📋 [View our Devpost submission](https://devpost.com/software/veloria) *(submitted as "Veloria")*
 
 **EUNOIA** reimagines mental health support through cutting-edge AI technology. Have meaningful conversations with **Sarah**, your AI therapist—a photorealistic 3D avatar that speaks, listens, and responds with empathy.
 
@@ -412,8 +424,22 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 ---
 
+## 👥 Team
+
+Built with 💜 by:
+
+| | Name | Role |
+|:-:|:-----|:-----|
+| 👨‍💻 | **Aditya Punjani** | Full Stack Developer |
+| 👨‍💻 | **David Nintang** | Full Stack Developer |
+| 👨‍💻 | **Sidharth Jain** | Full Stack Developer |
+| 👨‍💻 | **Aiden Miah** | Full Stack Developer |
+
+---
+
 ## 🙏 Acknowledgments
 
+- [HackHarvard 2025](https://hackharvard.io/) — For hosting an amazing hackathon
 - [TalkingHead](https://github.com/met4citizen/TalkingHead) by met4citizen — 3D avatar technology
 - [ElevenLabs](https://elevenlabs.io/) — Voice AI technology
 - [Google Gemini](https://ai.google.dev/) — AI conversation engine
